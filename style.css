@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background: #333333;
+  font-family: "Audiowide", sans-serif;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #726659;
+}
+
+a:visited {
+  display:none;
+}
+
+/************************** HEADER *********************************************/
+
+.navigation{
+  overflow: hidden;
+  background-color: #333333;
+  position: fixed;
+  opacity: 90%;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+header li {
+  float: left;
+  font-size: .9rem;
+  justify-content: space-between;
+}
+
+header li a {
+  color: #eeeeee;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 18px 16px;
+}
+
+/****************************** INFOR%ATIONS ***********************************/
+
+#informations{
+  background: url('./media/singapore.jpg') no-repeat 50% 50%/cover;
+}
+
+.grid-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". nom ."
+    "informations bouton photo";
+}
+
+.photo {
+  grid-area: photo;
+
+}
+
+.photo img {
+  position: relative;
+  left: 10%;
+  border-radius: 25%;
+  border: 1px solid #eeeeee;
+}
+
+.bouton{
+  grid-area: bouton;
+}
+
+.bouton a{
+  position: relative;
+  left: 25%;
+  top: 25%;
+  padding: 25px 80px;
+  border: 1px solid #eeeeee;
+}
+
+.bouton a:hover{
+  transition: .3s ease-in;
+  border-color: #726659;
+}
+
+.nom {
+  grid-area: nom;
+}
+
+.nom h1{
+  position: relative;
+  left: 20%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 120px;
+  padding: 15px 20px;
+  color: #eeeeee;
+  text-shadow: 0px 0px 10px rgba(96,146,206,0.8);
+}
+
+.nom #line{
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+  margin: 15px 0;
+}
+
+.nom h2{
+  position: relative;
+  left: 50%;
+  transform: translateX(-40%);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  padding: 50px 40px;
+  color: #eeeeee;
+  text-shadow: 0px 0px 10px rgba(96,146,206,0.8);
+}
+
+.informations {
+  grid-area: informations;
+}
+
+.informations h5{
+  position: relative;
+  left: 50%;
+  font-size: 1.2rem;
+  color: #eeeeee;
+}
+
+/************************* PARCOURS ***********************************************/
+
+#parcours{
+  max-width: 800px;
+  margin: 40px auto 188px auto;
+  padding: 40px 30px 100px 30px;
+  background: url('./media/parcours.jpg') no-repeat fixed 50% 50%;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: -1px -1px 8px #283655;
+}
+
+#parcours h3{
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+}
+
+#parcours h4{
+  font-size: 1.6rem;
+  color: #7800ab;
+  margin-left: 20px;
+}
+
+#parcours h6{
+  font-style: italic;
+  color: #130fff;
+  margin-left: 20px;
+}
+
+#parcours p{
+  line-height: 1.9rem;
+}
+
+.timeline{
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #130fff, #7800ab);
+  border-image-slice: 1;
+  margin: 0;
+  padding: 40px;
+  position: relative;
+}
+
+.timeline:nth-child(1)::after{
+  content: '▲';
+  color: #7800ab;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  box-sizing: content-box !important;
+}
+
+.timeline:nth-child(1){
+  border-bottom: 3px  solid;
+  border-top: none;
+  width: 80%;
+}
+
+.timeline:nth-child(2){
+  border-top: none;
+}
+
+.timeline:nth-child(odd){
+  border-right: 3px solid;
+  padding-left: 0;
+}
+
+.timeline:nth-child(even){
+  border-left: 3px solid;
+  padding-right: 0;
+}
