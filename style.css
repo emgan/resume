@@ -63,7 +63,7 @@ header li a {
 /****************************** INFOR%ATIONS ***********************************/
 
 #informations{
-  background: url('./media/singapore.jpg') no-repeat 50% 50%/cover;
+  background: linear-gradient(180deg, rgba(0,59,84,1) 0%, rgba(53,77,85,1) 50%, rgba(51,51,51,1) 100%);
 }
 
 .grid-container {
@@ -221,4 +221,67 @@ header li a {
 .timeline:nth-child(even){
   border-left: 3px solid;
   padding-right: 0;
+}
+
+/************************** COMPETENCES ****************************************/
+
+#competences{
+  width: 100%;
+  height: 100vh;
+  background: #333333;
+}
+
+.grid-container-competence {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "progression progression progression . competences competences competences"
+    "progression progression progression . competences competences competences"
+    "progression progression progression . competences competences competences";
+}
+
+.progression {
+  grid-area: progression;
+  margin: 0;
+  height: 640px;
+  clip-path: polygon(0 6%, 100% 0, 89% 98%, 2% 100%);
+  background: linear-gradient(-45deg, #5C258D, #4389A2);
+  background-size: 400% 400%;
+  animation: gradient1 10s ease infinite;
+}
+
+.competences {
+  grid-area: competences;
+  margin: 0;
+  height: 640px;
+  clip-path: polygon(50% 0%, 100% 1%, 100% 98%, 9% 100%, 0 2%);
+  background: radial-gradient(circle, rgba(97,67,133,1) 0%, rgba(81,99,149,1) 100%);
+  background-size: 400% 400%;
+  animation: gradient2 10s ease infinite;
+}
+
+@keyframes gradient1 {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient2 {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
