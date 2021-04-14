@@ -612,3 +612,134 @@ footer p{
 ::-webkit-scrollbar-thumb:hover{
   background: #757575;
 }
+
+/*************** MEDIA QUERY *******************************************************/
+
+@media screen and (max-width: 1100px) {
+  .grid-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". nom ."
+      ". informations ."
+      ". photo . "
+      ". bouton .";
+  }
+
+  .informations h5{
+    left: 50px;
+  }
+
+  .photo{
+    margin: 30px auto;
+  }
+
+  #parcours{
+    margin: 450px auto 188px auto;
+  }
+
+  .progression progress[value]{
+    width: 350px;
+  }
+
+}
+
+@media screen and (max-width:1020px) {
+  .nom h2,.nom h1{
+    font-size: 1.3rem;
+  }
+
+  .nom h2{
+    transform: translateX(-45%);
+  }
+}
+
+@media screen and (max-width:820px) {
+  .progression progress[value]{
+    width: 250px;
+  }
+
+  .footer-icons{
+    max-width: 80%
+  }
+}
+
+@media screen and (max-width:750px) {
+  .progression progress[value]{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:670px) {
+  .network{
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (max-width:610px) {
+  .progression progress[value]{
+    width: 130px;
+  }
+}
+
+@media screen and (max-width:570px) {
+  .competences h5:nth-child(1){
+    left: 30%;
+  }
+
+  .competences h5:nth-child(2){
+    left: 40%;
+  }
+
+  .competences h5:nth-child(3){
+    top: 20%;
+    left: 40%;
+  }
+
+  .competences h5:nth-child(4){
+    top: -5%;
+    left: 18%;
+  }
+
+  .competences h5:nth-child(5){
+    left: 40%;
+  }
+
+  .competences h5:nth-child(6){
+    top: 10%;
+    left: 40%;
+  }
+
+  input, textarea{
+    width: 300px;
+  }
+
+  .network{
+    font-size: 2rem;
+    padding: 25px 35px;
+  }
+
+  .footer-icons{
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width:390px) {
+  header li{
+    font-size: .6rem;
+  }
+
+  .progression{
+    height: 740px;
+  }
+
+  .competences{
+    height: 740px;
+  }
+
+  .progression progress[value]{
+    width: 100px;
+  }
+
+}
