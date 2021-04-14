@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html{
   scroll-behavior: smooth;
@@ -8,7 +8,7 @@ body{
   padding: 0;
   margin: 0;
   background: #333333;
-  font-family: "Audiowide", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ul{
@@ -132,7 +132,7 @@ header li a {
 .nom h2{
   position: relative;
   left: 50%;
-  transform: translateX(-40%);
+  transform: translateX(-38%);
   font-size: 1.6rem;
   text-transform: uppercase;
   padding: 15px 20px;
@@ -150,7 +150,10 @@ header li a {
   left: 50%;
   font-size: 1.2rem;
   color: #eeeeee;
+  padding: 0 10px;
+  margin: 25px 10px
 }
+
 
 /************************* PARCOURS ***********************************************/
 
@@ -284,4 +287,328 @@ header li a {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+/************* Progress bar *********************************/
+
+.suite-office{
+  position: relative;
+  top: 10%;
+  padding: 20px 15px;
+  margin: 10px;
+}
+
+.suite-office h3{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(149,149,149,1);
+}
+
+.c{
+  position: relative;
+  top: 10%;
+  padding: 20px 15px;
+  margin: 10px;
+}
+
+.c h3{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(149,149,149,1);
+}
+
+.anglais{
+  position: relative;
+  top: 10%;
+  padding: 20px 15px;
+  margin: 10px;
+}
+
+.anglais h3{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(149,149,149,1);
+}
+
+.python{
+  position: relative;
+  top: 10%;
+  padding: 20px 15px;
+  margin: 10px;
+}
+
+.python h3{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(149,149,149,1);
+}
+
+.progression progress[value]{
+  width: 450px;
+  height: 25px;
+  color: #00d9ff;
+}
+
+/************************************ competences diverse **********************/
+.competences{
+  overflow: hidden;
+}
+
+.competences h5{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(149,149,149,1);
+}
+
+.competences h5:nth-child(1){
+  color: #251954;
+  position: relative;
+  top: 5%;
+  left: 40%;
+  transform: translateX(-25%);
+}
+
+.competences h5:nth-child(2){
+  color: #251954;
+  position: relative;
+  top: 70%;
+  left: 45%;
+  transform: translateX(-25%);
+}
+
+.competences h5:nth-child(3){
+  color: #251954;
+  position: relative;
+  top: 25%;
+  left: 70%;
+  transform: translateX(-25%);
+}
+
+.competences h5:nth-child(4){
+  color: #251954;
+  position: relative;
+  top: 5%;
+  left: 80%;
+}
+
+.competences h5:nth-child(5){
+  color: #251954;
+  position: relative;
+  top: 30%;
+  left: 90%;
+  transform: translateX(-25%);
+}
+
+.competences h5:nth-child(6){
+  color: #251954;
+  position: relative;
+  top: -20%;
+  left: 45%;
+  transform: translateX(-25%);
+}
+
+
+/************************************** EXPERIENCES ******************************/
+
+/* .experiences h2{
+  margin: 50px 550px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #eeeeee;
+}
+
+.experiences p{
+  color: #eeeeee;
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.experiences h3{
+  margin: 15px 0;
+  text-transform: uppercase;
+  color: #eeeeee;
+  font-size: 1.3rem;
+
+}
+
+.experiences h4{
+  margin: 25px 0;
+  text-transform: uppercase;
+  color: #eeeeee;
+  font-size: 1.1rem;
+}
+
+.central h3, .central h4, .central p{
+  position: relative;
+  top: 50px;
+  padding: 15px;
+}
+
+.central iframe{
+  position: absolute;
+  left: 50%;
+  top: 550%;
+}
+
+.montbaray h3, .montbaray h4, .montbaray p{
+  position: relative;
+  padding: 15px;
+  top: 400px;
+}
+
+.montbaray iframe{
+  position: absolute;
+  left: 50%;
+  top: 625%;
+} */
+/******************************* FOOTER ******************************************/
+footer{
+  text-align: center;
+  padding: 100px 50px 50px 50px;
+}
+
+footer h3{
+  padding: 0 0 60px 0;
+  font-size: 2.5rem;
+  color: #eeeeee;
+}
+
+.footer-icons{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+}
+
+.network{
+  font-size: 4rem;
+  border: 1px solid #b3aca7;
+  padding: 30px 45px;
+  color: #b3aca7;
+  z-index: -1 !important;
+  border-radius: 50%;
+}
+
+.network:hover, textarea:hover, input:hover, .form-button:hover{
+  background: #b3aca7;
+  transition: all .3s ease-in-out;
+  color: #e2dedb;
+}
+
+.form-container{
+  padding-top: 20px;
+}
+
+#reused_form{
+  position: relative;
+  margin: 50px auto;
+}
+
+input{
+  font-size: .85rem;
+  width: 470px;
+  height: 50px;
+  padding: 0 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: 1px solid #b3aca7;
+  border-bottom: none;
+}
+
+textarea{
+  width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: 1px solid #b3aca7;
+  resize: none;
+}
+
+input::placeholder, textarea::placeholder, input:focus::placeholder, textarea:focus::placeholder{
+  color: #aca49c;
+
+}
+
+input:hover::placeholder, textarea:hover::placeholder, input:hover:focus::placeholder, textarea:hover:focus::placeholder{
+  color: #e2dedb;
+}
+
+.form-button{
+  background: transparent;
+  border: 1px solid #b3aca7;
+  padding: 20px 75px;
+  margin: 14px 0 -20px 0;
+  color: #aca49c;
+}
+
+.form-container h4{
+  font-size: 2rem;
+}
+
+.arrow{
+  width: 50px;
+  margin: 20px auto;
+  padding-top: 15px;
+  animation: arrow linear 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  0%{
+    transform: translateY(0px);
+  }
+
+  28%{
+    transform: translateY(8px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.arrow a{
+  font-size: 3rem;
+  border: none;
+  color: #aca49c;
+}
+
+.arrow:hover i{
+  transform: scale(1.6);
+  transition: .5s ease-in-out;
+  color: #e2dedb;
+}
+
+footer p{
+  font-size: .9rem;
+  letter-spacing: .3rem;
+  color: #eeeeee;
+}
+
+#copyright:hover{
+  text-decoration: none;
+  color: #eeeeee;
+  cursor: default;
+}
+
+
+/*********************** SCROLLBAR ************************************************/
+
+/* CHROME */
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #4a4a4a;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #757575;
 }
